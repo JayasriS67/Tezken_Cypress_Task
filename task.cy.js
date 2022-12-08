@@ -1,0 +1,72 @@
+describe('desmos', () =>
+{
+  it('test', () =>
+  {
+     cy.visit("https://www.desmos.com")
+     cy.get(".dcg-btn-primary[href='/calculator']").click()
+
+     cy.get(".dcg-show-keypad-container").click()
+     cy.get('.dcg-keypad-btn[aria-label="boldY"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="="]').click()
+     cy.get('.dcg-keypad-btn[aria-label="2"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="boldX"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="Squared"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="Plus"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="4"]').click()
+     cy.get(".dcg-icon-keyboard").click()
+     cy.screenshot('Quad')
+
+     cy.get(".dcg-new-expression-fade").click()
+     cy.get(".dcg-show-keypad-container").click()
+     cy.get('.dcg-keypad-btn[aria-label="boldY"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="="]').click()
+     cy.get('.dcg-keypad-btn[aria-label="boldX"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="Superscript"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="3"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="Right Arrow"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="Minus"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="6"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="boldX"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="Squared"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="Plus"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="1"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="1"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="boldX"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="Minus"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="6"]').click()
+     cy.get(".dcg-icon-keyboard").click()
+     cy.screenshot('Cubic')
+     
+     cy.get(".dcg-new-expression-fade").click()
+     cy.get(".dcg-show-keypad-container").click()
+     cy.get('.dcg-keypad-btn[aria-label="5"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="Square Root"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="boldY"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="Right Arrow"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="Minus"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="1"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="="]').click()
+     cy.get('.dcg-keypad-btn[aria-label="2"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="boldX"]').click()
+     cy.get(".dcg-icon-keyboard").click()
+     cy.screenshot('sqrt equation')
+
+     cy.get(".dcg-new-expression-fade").click()
+     cy.get(".dcg-show-keypad-container").click()
+     cy.get('.dcg-keypad-btn[aria-label="boldX"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="Squared"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="Plus"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="boldY"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="Squared"]').click()
+     cy.get('.dcg-keypad-btn[aria-label="="]').click()
+     cy.get('.dcg-keypad-btn[aria-label="6"]').click()     
+     cy.get(".dcg-icon-keyboard").click()
+     cy.screenshot('circle')
+
+    })
+    it("close browser", () => {
+              })
+
+
+}
+)
